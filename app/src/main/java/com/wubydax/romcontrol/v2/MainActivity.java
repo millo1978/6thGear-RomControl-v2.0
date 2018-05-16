@@ -1,12 +1,16 @@
 package com.wubydax.romcontrol.v2;
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.FragmentManager;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.TypedArray;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -47,6 +51,7 @@ public class MainActivity extends AppCompatActivity
     private SharedPreferences mSharedPreferences;
     private ArrayList<Integer> mNavMenuItemsIds;
 
+    @SuppressLint("NewApi")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,24 +78,25 @@ public class MainActivity extends AppCompatActivity
 
     private void initViews() {
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         assert drawer != null;
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         assert navigationView != null;
         navigationView.setNavigationItemSelectedListener(this);
         Menu navigationMenu = navigationView.getMenu();
         setUpPrefsMenu(navigationMenu);
     }
 
+    @TargetApi(Build.VERSION_CODES.JELLY_BEAN_MR1)
     private void setUpPrefsMenu(Menu navigationMenu) {
         String[] titles = getResources().getStringArray(R.array.nav_menu_prefs_titles);
         TypedArray iconIds = getResources().obtainTypedArray(R.array.nav_menu_prefs_drawables);
@@ -109,7 +115,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         if (drawer != null && drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
@@ -123,6 +129,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
+    @SuppressLint("NewApi")
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
@@ -138,8 +145,9 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    @SuppressLint("NewApi")
     @Override
-    public boolean onNavigationItemSelected(MenuItem item) {
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         int id = item.getItemId();
         if (mNavMenuItemsIds.contains(id)) {
             int index = mNavMenuItemsIds.indexOf(id);
@@ -164,7 +172,7 @@ public class MainActivity extends AppCompatActivity
             }
 
         }
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         assert drawer != null;
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -193,11 +201,13 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
+    @SuppressLint("NewApi")
     private void loadPrefsFragment(String prefName) {
         mFragmentManager.beginTransaction().replace(R.id.fragment_container, PrefsFragment.newInstance(prefName)).commit();
     }
 
 
+    @SuppressLint("NewApi")
     @Override
     public void onTaskCompleted(boolean isGranted) {
         if (mProgressDialog != null) {
@@ -213,6 +223,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    @SuppressLint("NewApi")
     @Override
     public void onDialogResult(int requestCode) {
         switch (requestCode) {
@@ -226,6 +237,7 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    @SuppressLint("NewApi")
     @Override
     public void onBackupRestoreResult(int which) {
         switch (which) {
@@ -248,6 +260,7 @@ public class MainActivity extends AppCompatActivity
     }
 
 
+    @SuppressLint("NewApi")
     @Override
     public void onRestoreRequested(String filePath, boolean isConfirmed) {
         if (isConfirmed) {
