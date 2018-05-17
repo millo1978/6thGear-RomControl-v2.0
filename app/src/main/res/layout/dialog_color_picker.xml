@@ -41,8 +41,8 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Press to apply"
+            android:gravity="start"
+            android:text="@string/press_to_apply"
             android:textAppearance="?android:attr/textAppearanceSmall" />
 
         <EditText
@@ -50,7 +50,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:hint="HEX"
+            android:hint="@string/hex"
             android:imeOptions="actionDone"
             android:maxLength="7"
             android:singleLine="true"
@@ -76,7 +76,7 @@
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:gravity="center"
-            android:text="→"
+            android:text="@string/arrow_right"
             android:textSize="20sp" />
 
         <com.wubydax.romcontrol.v2.prefs.ColorPickerPanelView
