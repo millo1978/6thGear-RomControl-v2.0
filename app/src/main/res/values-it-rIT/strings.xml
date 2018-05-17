@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Rom Control</string>
+    <string name="press_color_to_apply">Premi per applicare</string>
+    <string name="root_progress_dialog_title">Acquisisco i privilegi d\'Amministratore</string>
+    <string name="root_progress_dialog_message">Per favore, attendi…</string>
+    <string name="reboot_menu">Menu di riavvio</string>
+    <string name="reboot_device_text">Riavvia il Dispositivo</string>
+    <string name="reboot_recovery_text">Riavvia in Recovery</string>
+    <string name="reboot_ui_text">Riavvia SystemUI</string>
+    <string name="theme_dialog_title">Scegli il tema</string>
+    <string name="changelog_version_title">Versione ROM: %1$s</string>
+    <string name="restore_complete_toast">Ripristino completato</string>
+    <string name="systemui_prefs">Sistema</string>
+    <string name="phone_prefs">Telefono</string>
+    <string name="framework_prefs">Framework</string>
+    <string name="notification_panel_prefs">Pannello notifiche</string>
+    <string name="more_options">Altre opzioni</string>
+    <string name="set_theme">Imposta il tema</string>
+    <string name="about_us">Crediti</string>
+    <string name="changelog">Registro modifiche</string>
+    <string name="find_app">Trova App</string>
+    <string name="reboot_later_negative_button">più tardi</string>
+    <string name="reboot_now_dialog_button">riavvia adesso</string>
+    <string name="multiple_choice_preference_button_done">Fatto</string>
+    <string name="select_all">Seleziona tutto</string>
+    <string name="deselect_all">Deseleziona tutto</string>
+    <string name="app_reboot_required_dialog_message">Per avere effetto è richiesto il riavvio di %1$s.  Premi OK per riavviare adesso</string>
+    <string name="buttons_prefs">Pulsanti</string>
+    <string name="app_reboot_required_dialog_title">Necessario riavvio dell\'app</string>
+    <string name="backup_complete_toast">Backup completato con successo. Lo puoi trovare in %1$s</string>
+    <string name="choose_backup_dialog_title">Per favore scegli il Backup da ripristinare</string>
+    <string name="command_executed_success_toast">Eseguito con successo</string>
+    <string name="confirm_script_dialog_message">Sicuro di voler caricare %1$s?</string>
+    <string name="dialog_color_picker">Scegli il colore</string>
+    <string name="reboot_required_dialog_message">E\' richiesto un riavvio del dispositivo. Vuoi riavviare adesso?</string>
+    <string name="reboot_required_dialog_title">Riavvio del dispositivo necessario</string>
+    <string name="restore_confirm_dialog_title">Per favore conferma il ripristino</string>
+    <string name="run_script_confirm_dialog_positive_button">Sì, carica</string>
+    <string name="run_script_confirm_dialog_title">Conferma necessaria</string>
+    <string name="select_all_label">Tutto</string>
+    <string name="root_tools_exception_toast">File non trovato o Root negato</string>
+    <string name="backup_and_restore"><![CDATA[Backup & Ripristino]]></string>
+    <string name="backup_restore_dialog_title">Backup/Ripristino dati Rom Control</string>
+    <string name="no_su_dialog_title">Root non disponibile</string>
+    <string name="no_backup_dialog_title">Nessun Backup trovato</string>
+    <string name="no_backup_dialog_message">Vuoi creare un nuovo Backup adesso?</string>
+    <string name="no_su_dialog_message">Non riesco ad acquisire i privilegi d\'Amministratore.  Alcune funzioni dell\'App possono essere eseguite anche senza Root. Tuttavia potresti incontrare problemi nell\'esecuzione di script o nel riavvio.  E\' altamente raccomandato di permettere l\'accesso Root alla prossima richiesta automatica oppure manualmente dall\'app SU in tuo possesso.</string>
+    <string name="restore_confirm_message">Hai scelto di ripristinare i dati da un precedente backup.  <b>Presta attenzione! Questa operazione cambierà le impostazioni del tuo dispositivo sovrascrivendole con quelle presenti in questo file.  <font fgcolor="red">NON PROCEDERE se non sei assolutamente sicuro!!!</font></b>  Rom Control verrà chiuso per permettere il ripristino e riavviato una volta completata l\'operazione. A seconda dei dati da ripristinare, potrebbe impiegare parecchio tempo.  Per favore clicca \"CONFERMA\" per procedere o \"ANNULLA\" per terminare.</string>
+    <string name="imminent_reboot_warning">Il tuo dispositivo verrà riavviato IMMEDIATAMENTE dopo il completamento dello script!!!</string>
+    <string name="restore_dialog_description">Questa azione ripristinerà le seguenti cose ai colori originali</string>
+    <string name="navigation_drawer_open">Apri il pannello di navigazione</string>
+    <string name="navigation_drawer_close">Chiudi il pannello di navigazione</string>
+    <string name="press_to_apply">Premi per applicare</string>
+</resources>
