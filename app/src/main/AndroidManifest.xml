@@ -26,9 +26,16 @@
         tools:ignore="GoogleAppIndexingWarning">
         <meta-data android:name="com.samsung.android.sdk.multiwindow.penwindow.enable" android:value="true"/>
         <meta-data android:name="com.sec.android.support.multiwindow" android:value="true" />
-        <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name">
+
+        <activity android:autoRemoveFromRecents="true" android:label="@string/app_name" android:name=".MainActivity"
+            tools:ignore="ExtraText">
+            <intent-filter>
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS"/>
+            </intent-filter>
+            <meta-data android:name="com.android.settings.category" android:value="com.android.settings.category.device"/>
+            <meta-data android:name="com.android.settings.title" android:resource="@string/app_name"/>
+            <meta-data android:name="com.android.settings.icon" android:resource="@drawable/ic_romcontrol_settings"/>
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
