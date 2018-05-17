@@ -13,31 +13,31 @@
         You should have received a copy of the GNU General Public License
         along with this program.  If not, see <http://www.gnu.org/licenses/>.*/-->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-             android:layout_width="match_parent"
-             android:layout_height="@dimen/nav_header_height"
-             android:gravity="bottom"
-             >
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="bottom"
+    >
 
 
-    <ImageView
+    <com.wubydax.romcontrol.v2.utils.AnimateRomLogo
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
-        android:src="@drawable/header"/>
+        android:src="@drawable/animated_romlogo"
+        android:paddingTop="20.0px"/>
 
     <View
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/protective_gradient_bottom"/>
+        android:background="#00000000"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
-        android:text="6thGear Rom Control"
-        android:textColor="@android:color/white"
+        android:text="@string/animated_rom_logo"
+        android:textColor="@android:color/darker_gray"
         android:layout_margin="10dp"
-        android:textSize="18sp"
+        android:textSize="12sp"
         android:textStyle="bold"/>
 
 </FrameLayout>

@@ -71,6 +71,7 @@
     <string name="press_to_apply">Press to apply</string>
     <string name="hex">HEX</string>
     <string name="arrow_right">→</string>
+    <string name="animated_rom_logo">Animated Rom Logo</string>
 
     <!--These strings are to set the default fragment to open for the first time the app launches-->
 </resources>
