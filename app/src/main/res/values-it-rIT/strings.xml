@@ -62,8 +62,8 @@
     <string name="volume_button">Pulsanti del Volume</string>
     <string name="volume_down">Volume Giu</string>
     <string name="volume_up">Volume Su</string>
-    <string name="music_control">Controllo Lettore musicale</string>
+    <string name="music_control">Funzione Controllo Lettore musicale</string>
     <string name="button_delay">Ritardo del pulsante</string>
     <string name="volume_wake">Tasti volume risvegliano il dispositivo</string>
-    <string name="warning_volume_buttons">ATTENZIONE: \nDisabilita il "Risveglio" se hai intenzione di usare i tasti volume con il lettore musicale!</string>
+    <string name="warning_volume_buttons">ATTENZIONE: \n\nDisabilita il Risveglio se hai intenzione di usare i tasti volume con il lettore musicale!</string>
 </resources>
