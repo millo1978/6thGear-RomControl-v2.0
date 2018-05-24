@@ -52,4 +52,18 @@
     <string name="navigation_drawer_open">Apri il pannello di navigazione</string>
     <string name="navigation_drawer_close">Chiudi il pannello di navigazione</string>
     <string name="press_to_apply">Premi per applicare</string>
+    <string name="disabled">Disabilitata</string>
+    <string name="enabled">Abilitata</string>
+    <string name="lockscreen_rotation">Rotazione Bloccaschermo</string>
+    <string name="allow_all_rotations">Rotazioni consentite</string>
+    <string name="immersive_mode">Modalità immersiva (Schermo intero)</string>
+    <string name="on">Attivato</string>
+    <string name="off">Disattivato</string>
+    <string name="volume_button">Pulsanti del Volume</string>
+    <string name="volume_down">Volume Giu</string>
+    <string name="volume_up">Volume Su</string>
+    <string name="music_control">Controllo Lettore musicale</string>
+    <string name="button_delay">Ritardo del pulsante</string>
+    <string name="volume_wake">Tasti volume risvegliano il dispositivo</string>
+    <string name="warning_volume_buttons">ATTENZIONE: \nDisabilita il "Risveglio" se hai intenzione di usare i tasti volume con il lettore musicale!</string>
 </resources>

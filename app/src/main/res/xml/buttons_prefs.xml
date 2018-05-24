@@ -1,4 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <PreferenceCategory
+        android:title="@string/volume_button" />
+
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="@string/volume_wake"
+        android:key="volume_wake_screen"
+        android:summaryOff="@string/off"
+        android:summaryOn="@string/on"
+        android:defaultValue="0" />
+
+    <PreferenceScreen
+        android:summary="@string/warning_volume_buttons">
+    </PreferenceScreen>
+
+    <com.wubydax.romcontrol.v2.prefs.MySwitchPreference
+        android:title="@string/music_control"
+        android:key="volbtn_music_controls"
+        android:summaryOff="@string/disabled"
+        android:summaryOn="@string/enabled"
+        android:defaultValue="false" />
+
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/volbtn_timeout_entries"
+        android:title="@string/button_delay"
+        android:key="volbtn_timeout"
+        android:summary="%s"
+        android:defaultValue="350"
+        android:dependency="volbtn_music_controls"
+        android:entryValues="@array/volbtn_timeout_values" />
+
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/volbtn_action_entries"
+        android:title="@string/volume_up"
+        android:key="volbtn_vol_up"
+        android:summary="%s"
+        android:dependency="volbtn_music_controls"
+        android:defaultValue="87"
+        android:entryValues="@array/volbtn_action_values" />
+    <com.wubydax.romcontrol.v2.prefs.MyListPreference
+        android:entries="@array/volbtn_down_action_entries"
+        android:title="@string/volume_down"
+        android:key="volbtn_vol_down"
+        android:summary="%s"
+        android:dependency="volbtn_music_controls"
+        android:defaultValue="88"
+        android:entryValues="@array/volbtn_down_action_values" />
+
 </PreferenceScreen>

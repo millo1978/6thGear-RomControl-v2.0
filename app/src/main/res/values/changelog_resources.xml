@@ -30,7 +30,7 @@
     <!--This will be the dialog title.
     Put your own rom version and name.
     Have fun-->
-    <string name="rom_version_for_changelog">build v1.0 6thgearrom</string>
+    <string name="rom_version_for_changelog" translatable="false">VNS-L21C432B502</string>
 
 
 </resources>

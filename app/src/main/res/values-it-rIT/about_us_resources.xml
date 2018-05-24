@@ -28,7 +28,7 @@
     <!--In this array you will put the titles for your contact info items. Keep the order consistent between all 3 arrays-->
     <string-array name="about_contact_us_text">
         <item>Facebook</item>
-        <item>Our Site</item>
+        <item>Nostro Sito</item>
         <item>XDA</item>
     </string-array>
 
